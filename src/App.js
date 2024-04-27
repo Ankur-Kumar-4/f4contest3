@@ -28,7 +28,7 @@ function App() {
           <Navbar />
 
           <Routes>
-            <Route path="/signup" Component={Form} />
+            <Route path="/" Component={Form} />
             <Route path="/profile" Component={Profile} />
           </Routes>
         </BrowserRouter>

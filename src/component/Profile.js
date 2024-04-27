@@ -8,7 +8,7 @@ function Profile() {
   const [detail, setDetail] = useState(userDetails);
   useEffect(() => {
     if (!isSignin) {
-      navigate("/signup");
+      navigate("/");
     }
   }, []);
 
@@ -16,7 +16,7 @@ function Profile() {
     localStorage.removeItem("userDetails");
     setDetail("");
     setIsSignin(false);
-    navigate("/signup");
+    navigate("/");
   };
 
   return (
